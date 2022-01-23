@@ -1,0 +1,33 @@
+#logo{
+    font-size: large;    
+    color: rgb(245, 184, 30);
+}
+body{
+    background-color: darkcyan;
+    font-family: monospace;
+    color: seashell;
+}
+#sidebar {
+   position:fixed;
+   /* height: 100%; */
+    padding-left: 110px;
+    float: left;
+    width: 10%;
+
+}
+
+a {
+    color: rgb(245, 184, 30);
+}
+
+.info-panel{
+    float:right;
+    width: 75%;
+    clear: none;
+    padding-right: 10px;
+}
+
+.links {
+    color: rgb(147, 161, 243);
+    font-style: italic;
+}
