@@ -30,6 +30,11 @@ body {
     min-height: 100vh;
 }
 
+.section {
+    margin: 3.5rem 0;
+    scroll-margin-top: 140px;
+}
+
 main {
     width: min(1100px, 92vw);
     margin: 0 auto;
