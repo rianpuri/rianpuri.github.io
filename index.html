@@ -1,69 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>About Rian Puri</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-    </head>
-    <body>
-        <div id="sidebar">
-            <pre id="logo">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rian Puri | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="site.webmanifest">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#hero" aria-label="Back to top">
+            <span class="brand-mark">&lt;rp/&gt;</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-▒█▀▄░█▒▄▀▄░█▄░█
-░█▀▄░█░█▀█░█▒▀█
-            </pre>
-            
-            <a href="index.html"><p>about</p></a>
-            <!--<a href="resumeRian.html"><p>resume</p></a>-->
-            <a href="https://rianpuri.github.io/resources/rianpuri_resume.pdf" target="_blank">resume</a>
-            <a href="projectsRian.html"><p>contributions</p></a>
-        </div>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">UC Berkeley EECS Honors Program</p>
+                <h1>Hi, I'm Rian.</h1>
+                <p class="lede">
+                    I’m a senior in EECS at UC Berkeley, building backend, distributed, and ML-driven systems that make
+                    complex data usable. I’m looking for new grad software roles where I can own infrastructure
+                    and applied AI end to end.
+                </p>
+                <div class="cta-row">
+                    <a class="btn primary" href="https://rianpuri.github.io/resources/rianpuri_resume.pdf" target="_blank" rel="noopener">
+                        Download résumé
+                    </a>
+                    <a class="btn secondary" href="mailto:rianpuri01@gmail.com">
+                        Email me
+                    </a>
+                </div>
+                <ul class="meta-links">
+                    <li>
+                        <span class="meta-label">LinkedIn</span>
+                        <a href="https://linkedin.com/in/rianpuri" target="_blank" rel="noopener">linkedin.com/in/rianpuri</a>
+                    </li>
+                    <li>
+                        <span class="meta-label">GitHub</span>
+                        <a href="https://github.com/rpuri4" target="_blank" rel="noopener">github.com/rpuri4</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-card">
+                <div>
+                    <p class="stat-label">Latest focus</p>
+                    <p class="stat-value">RAG systems · distributed infra · observability</p>
+                </div>
+                <div>
+                    <p class="stat-label">Toolbox</p>
+                    <p class="stat-value">Go, C++, Python, FastAPI, Snowflake, PostgreSQL, Redis, AWS</p>
+                </div>
+                <div>
+                    <p class="stat-label">What’s next</p>
+                    <p class="stat-value">New grad SWE roles shipping reliable backend + AI infrastructure.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="info-panel">
-            <p>
-                ABOUT ME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.linkedin.com/in/rianpuri/" target="_blank">LinkedIn</a>
-                <br>
-                ____________________________________________________________________________________________________ <br> <br>
-                I am currently a junior at University of California, Berkeley studying Electrical Engineering and Computer Science. <br><br>
-                I’m interested in software engineering, machine learning, artificial intelligence and robotics. <br>
-                <br><br>
+        <section id="about" class="section">
+            <div class="section-header">
+                <p class="eyebrow">About</p>
+                <h2>Engineering systems that stay fast and understandable</h2>
+            </div>
+            <div class="section-body two-column">
+                <p>
+                    I study Electrical Engineering &amp; Computer Science in the Berkeley EECS Honors Program with a breadth in
+                    Human-Centered Machine Learning and Educational Technology, focusing on backend, infrastructure, and applied ML.
+                    I’m currently carrying a 3.7 GPA, but the constraints I care about most are low-latency data access, reliable
+                    automation, and making sure humans can trust the output.
+                </p>
+                <p>
+                    Recently I’ve built RAG microservices, NLP-to-SQL interfaces, and adaptive learning systems that integrate with LMS APIs.
+                    Whether the stack is FastAPI, Flask, Go microservices, or Postgres/Snowflake pipelines, I like connecting the algorithmic
+                    details to clear product outcomes.
+                </p>
+            </div>
+            <ul class="pill-list">
+                <li>Backend systems</li>
+                <li>Distributed storage</li>
+                <li>Applied ML &amp; NLP</li>
+                <li>Cloud + DevOps</li>
+                <li>Observability</li>
+            </ul>
+        </section>
 
-                 WHAT I'M UP TO <br>
-                 ____________________________________________________________________________________________________ <br> <br>
+        <section id="experience" class="section">
+            <div class="section-header">
+                <p class="eyebrow">Experience</p>
+                <h2>Recent roles</h2>
+                <p>Focused on shipping reliable systems that bridge backend infrastructure with ML-driven insights.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <header>
+                        <div>
+                            <p class="eyebrow">May – Aug 2025 · Satellite Beach, FL</p>
+                            <h3>Software Engineering Intern · Delivr AI</h3>
+                        </div>
+                    </header>
+                    <ul>
+                        <li>Built a RAG-powered microservice in Python that classifies web traffic into an 87k-topic taxonomy and returns fit scores + reasoning via REST.</li>
+                        <li>Developed low-latency Snowflake pipelines (SQL + Python) for real-time analytics and audience-targeting integrations.</li>
+                        <li>Automated ingestion with Docker + AWS Batch/Lambda, improving throughput 20% and removing manual ops.</li>
+                        <li>Instrumented the service with OpenTelemetry for end-to-end latency and error tracing in production.</li>
+                    </ul>
+                    <p class="tech-stack">Python · Snowflake · LangChain · Docker · AWS · OpenTelemetry</p>
+                </article>
+                <article class="card">
+                    <header>
+                        <div>
+                            <p class="eyebrow">Jun – Aug 2024 · Palo Alto, CA</p>
+                            <h3>Software Engineer Intern · RecVue</h3>
+                        </div>
+                    </header>
+                    <ul>
+                        <li>Designed a FastAPI backend that converts natural-language questions into validated SQL using LLM function calling.</li>
+                        <li>Integrated PostgreSQL (RDS) + pgvector + Redis for semantic schema search and sub-100ms caching.</li>
+                        <li>Automated CI/CD with GitHub Actions + AWS ECS, adding distributed tracing to boost deployment speed and observability.</li>
+                    </ul>
+                    <p class="tech-stack">FastAPI · PostgreSQL · pgvector · Redis · AWS ECS · GitHub Actions</p>
+                </article>
+                <article class="card">
+                    <header>
+                        <div>
+                            <p class="eyebrow">Jan 2025 – Present · Berkeley, CA</p>
+                            <h3>Undergraduate Researcher · ACE Lab</h3>
+                        </div>
+                    </header>
+                    <ul>
+                        <li>Building backend infrastructure for AutoRemind, a Flask-based system that connects to LMS APIs to deliver adaptive learning reminders.</li>
+                        <li>Developing PostgreSQL data pipelines that map assignments to contextual readings and resources.</li>
+                        <li>Designing analytics triggers that detect incomplete tasks and send personalized nudges to improve student engagement.</li>
+                    </ul>
+                    <p class="tech-stack">Flask · PostgreSQL · REST APIs</p>
+                </article>
+            </div>
+        </section>
 
-                 Here are some of the classes I've taken so far:
+        <section id="projects" class="section">
+            <div class="section-header">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Projects &amp; research I loved building</h2>
+            </div>
+            <div class="card-grid">
+                <article class="card highlight">
+                    <header>
+                        <div>
+                            <p class="eyebrow">Systems · 2025</p>
+                            <h3>AI Agent Orchestrator</h3>
+                        </div>
+                    </header>
+                    <p>
+                        Multi-agent orchestration framework supporting concurrent LLM agents, streaming, and pluggable tools. Built scheduling,
+                        state persistence, and gRPC interfaces so agents can coordinate across clusters.
+                    </p>
+                    <ul>
+                        <li>Implemented Redis-backed state store plus retry queues for fault recovery.</li>
+                        <li>Added Prometheus metrics and structured logging for observability.</li>
+                    </ul>
+                    <p class="tech-stack">Go · Redis · gRPC · Docker · Kubernetes · Prometheus</p>
+                </article>
+                <article class="card">
+                    <header>
+                        <div>
+                            <p class="eyebrow">Distributed Systems · 2024</p>
+                            <h3>Distributed Log Storage Engine</h3>
+                        </div>
+                    </header>
+                    <p>
+                        Replicated, log-structured storage engine with append-only semantics, segment compaction, and Raft-style consensus
+                        for leader election and durability across nodes.
+                    </p>
+                    <p class="tech-stack">C++ · Raft · Linux · Perf</p>
+                </article>
+                <article class="card">
+                    <header>
+                        <div>
+                            <p class="eyebrow">Compilers · 2024</p>
+                            <h3>OCaml Tensor Compiler</h3>
+                        </div>
+                    </header>
+                    <p>
+                        Extended a CS164 Lisp compiler with a Tensor type system, reverse-mode autodiff, OpenBLAS bindings, bytecode fusion,
+                        and an arena allocator to shrink GC pauses ~35% on compute-heavy workloads.
+                    </p>
+                    <p class="tech-stack">OCaml · Compiler Design · OpenBLAS</p>
+                </article>
+            </div>
+        </section>
 
-                 <ul>
-                    <li>Designing Information Devices and Systems</li>
-                    <li>Structure and Interpretation of Computer Programs</li>
-                    <li>Machine Structures</li>
-                    <li>Data Structures</li>
-                    <li>Discrete Mathematics and Probability Theory</li>
-                    <li>Physics for Scientists and Engineers</li>
-                    <li>Multivariable Calculus</li>
-                    <li>Introduction to Probability and Statistics</li>
-                  </ul>
-                  
-                 
-                  In addition to my coursework, I'm an active
-                   member of the Debate Society of Berkeley, where I <br>recently represented Berkeley at USUDC 2023.
-                  Debate allows me to improve my critical thinking and <br> public speaking skills.<br><br>
-                  I also contribute as a sports guest speaker at KalX 90.7 FM radio show, blending my passion <br>for sports with communication.
-                  Outside of this, I enjoy skiing and playing basketball.
-                 <br><br><br>
-                 For any questions/concerns, the best way to contact me is through email at rianpuri01@gmail.com
-                 </p>
-        </div>
+        <section class="section">
+            <div class="section-header">
+                <p class="eyebrow">Technical Skills</p>
+                <h2>Stack I reach for</h2>
+                <p>Focused on backend development, distributed systems, databases, infrastructure, cloud, and security.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Languages</h3>
+                    <p>Go, C++, Python, Java, OCaml, SQL, JavaScript/TypeScript, Bash, C</p>
+                </article>
+                <article class="card">
+                    <h3>Platforms &amp; Tools</h3>
+                    <p>Docker, Kubernetes, AWS, gRPC, FastAPI, PostgreSQL, Redis, Snowflake, Kafka, GitHub Actions, Linux</p>
+                </article>
+                <article class="card">
+                    <h3>Focus Areas</h3>
+                    <p>Backend services, distributed infra, databases, RAG/LLM tooling, observability, and developer experience.</p>
+                </article>
+            </div>
+        </section>
 
-    </body>
+                <section id="contact" class="section contact">
+            <div class="section-header">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s build something useful</h2>
+                <p class="contact-subtext">Open to new grad SWE roles, research collaborations, or speaking about AI &amp; developer tooling.</p>
+            </div>
+            <div class="contact-card">
+                <a class="btn primary" href="mailto:rianpuri01@gmail.com">rianpuri01@gmail.com</a>
+                <a class="btn secondary" href="https://linkedin.com/in/rianpuri" target="_blank" rel="noopener">Message on LinkedIn</a>
+                <a class="btn secondary" href="https://github.com/rpuri4" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="current-year"></span> Rian Puri · Built for GitHub Pages</p>
+    </footer>
+</body>
 </html>
